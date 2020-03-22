@@ -56,4 +56,11 @@
 <requirenment>production</requirenment>
 <script>CREATE SEQUENCE HIBERNATE_SEQUENCE;</script>
 </changeSet>
+
+<changeSet>
+<id>9</id>
+<author>dubovik</author>
+<requirenment>production</requirenment>
+<script>ALTER TABLE PICTURES ADD CONSTRAINT PICTURES_UNIQUE UNIQUE (LOCATION);</script>
+</changeSet>
 </changeList> 
