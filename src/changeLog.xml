@@ -63,4 +63,11 @@
 <requirenment>production</requirenment>
 <script>ALTER TABLE PICTURES ADD CONSTRAINT PICTURES_UNIQUE UNIQUE (LOCATION);</script>
 </changeSet>
+
+<changeSet>
+<id>10</id>
+<author>dubovik</author>
+<requirenment>production</requirenment>
+<script>ALTER TABLE RACES ADD COLUMN NAME CHARACTER VARYING;</script>
+</changeSet>
 </changeList> 
