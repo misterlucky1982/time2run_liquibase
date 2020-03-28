@@ -70,4 +70,11 @@
 <requirenment>production</requirenment>
 <script>ALTER TABLE RACES ADD COLUMN NAME CHARACTER VARYING;</script>
 </changeSet>
+
+<changeSet>
+<id>11</id>
+<author>dubovik</author>
+<requirenment>production</requirenment>
+<script>ALTER TABLE RACES ADD CONSTRAINT RACES_UNIQUE UNIQUE (NAME);</script>
+</changeSet>
 </changeList> 
